@@ -1,0 +1,239 @@
+﻿<Window x:Class="POE_PROG6212.Login_Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE_PROG6212"
+        mc:Ignorable="d"
+        Title="Login_Register" Height="500" Width="900"
+        AllowsTransparency="True" 
+        Background="#6C63FF"
+        WindowStyle = "None" 
+        ResizeMode= "NoResize"
+        MouseDown="LoginRegisterMouseDown">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid
+            Background="#000"
+            Grid.ColumnSpan="2">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+
+
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnEnd" Width="18" Height="18" Content="X"
+                        Margin="28,4,29,0" Click="btnEnd_Click"
+                    Grid.ColumnSpan="1" VerticalAlignment="Top" Foreground="Red"/>
+
+            <TextBlock Text="Study Planner"
+                       Foreground="White"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       FontFamily="Helvetica"
+                       FontWeight="Bold"
+                       Width="101" Grid.ColumnSpan="4" Margin="70,0,0,0"/>
+
+
+
+
+
+        </Grid>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center"
+                    Margin="60">
+
+  <StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="60" Height="60"
+                       Source="C:\Users\User\source\repos\POE_PROG6212\IMAGES\graduation-event.png"
+                           Margin="0,0,20,0"
+                           RenderOptions.BitmapScalingMode="Fant"
+                        />
+
+                    <TextBlock Text="Study Planner"
+                           Foreground="white"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           FontFamily="Helvetica"
+                           />
+
+                </StackPanel>
+                <TextBlock Text="Keep Track of your modules study Hours "
+                          Foreground="white"
+                           FontSize="18"
+                           FontWeight="Medium"
+                           VerticalAlignment="Center"
+                           FontFamily="Helvetica"
+                           Margin="0,20,0,0"/>
+
+                <TextBlock Text="Please fill in your details and click LOGIN to access program 
+                       
+                       If you are a new user click REGISTER to sign up"
+                FontWeight="Light"
+                FontFamily="futura"
+                FontSize="12"
+                Foreground="White"
+                Opacity="0.5"
+                Margin="0,20,0,0"
+                TextWrapping="Wrap"
+                       />
+
+                <StackPanel Orientation="Horizontal" >
+
+                    <Label x:Name="lblUsName" Content="User Name: "
+                 FontWeight="Light"
+                FontFamily="futura"
+                FontSize="12"
+                Foreground="White" 
+                Margin="15,10,0,0"
+                       />
+                    <TextBox 
+                     x:Name="txtUserName"
+                    Background="Transparent"
+                    Foreground="White" 
+                    Width="150"
+                    HorizontalAlignment="Left"
+                    Margin="7,10,0,0" />
+                    
+
+
+                </StackPanel>
+      
+                <StackPanel Orientation="Horizontal">
+
+                    <Label x:Name="lblPassword" Content="Password:"
+                 FontWeight="Light"
+                FontFamily="futura"
+                FontSize="12"
+                Foreground="White" 
+                Margin="15,10,0,0"
+                       />
+                    <PasswordBox
+                     x:Name="txtPassword"
+                    Background="Transparent"
+                    Foreground="White" 
+                    Width="150"
+                    HorizontalAlignment="Left"
+                    Margin="20,10,0,0"
+                    
+                         />
+
+                </StackPanel>
+
+            </StackPanel>
+
+
+            
+
+            <StackPanel Orientation="Horizontal" Margin="0,25,0,0" Height="30">
+
+                <Button x:Name="Register" 
+                        Width="80" Height="30" 
+                        Content="Register"
+                        Margin="50,0,0,0"
+                        Foreground="YELLOW"
+                        Click="btnRegister_click"/>
+                
+                <Button x:Name="btnLogin" 
+                    VerticalAlignment="Center"
+                    Width="80" Height="30" 
+                    Margin="50,0,0,0"
+                    Content="Login"
+                    Click="btnLogin_click"/>
+            </StackPanel>
+
+
+
+  </StackPanel>
+
+       
+        
+        
+
+        <Grid Grid.RowSpan="2" Grid.Column="1" >
+            <StackPanel 
+                Grid.Row="1" 
+                VerticalAlignment="Center"
+                Margin="60">
+
+                <StackPanel>
+                    
+
+                    
+
+                    <StackPanel Orientation="Horizontal">
+                        
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Image Width="250" Height="250"
+                       Source="C:\Users\User\source\repos\POE_PROG6212\IMAGES\Humaaans - Wireframe.png"
+                       RenderOptions.BitmapScalingMode="Fant"
+                        />
+                        
+                </StackPanel >
+                    <StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                           
+
+                        </StackPanel>
+
+                        
+
+                        <TextBlock Text="This program will calculate the study hours for each semester module and help you keep track of the completed and remaining hours needed to study for these modules.
+                                   LOGIN or REGISTER as a new user to view your study planner"
+                           Foreground="white"
+                           FontSize="12"
+                           FontWeight="Normal"
+                           VerticalAlignment="Center"
+                           FontFamily="Helvetica" 
+                       TextWrapping="Wrap"
+                           Margin="0,10,0,0"/>
+
+
+                    </StackPanel>
+
+             </StackPanel>
+                
+                
+                
+                
+                
+
+            </StackPanel>
+            
+            
+
+        </Grid>
+
+
+    </Grid>
+</Window>

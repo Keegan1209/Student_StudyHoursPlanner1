@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POE_PROG6212", "POE_PROG6212.csproj", "{A285ED4F-5AB9-4615-B31D-5BEBC7DEC5F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary01", "..\ClassLibrary01\ClassLibrary01.csproj", "{F4785B3D-97C7-4035-B855-191AC73814BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A285ED4F-5AB9-4615-B31D-5BEBC7DEC5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A285ED4F-5AB9-4615-B31D-5BEBC7DEC5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A285ED4F-5AB9-4615-B31D-5BEBC7DEC5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A285ED4F-5AB9-4615-B31D-5BEBC7DEC5F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4785B3D-97C7-4035-B855-191AC73814BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4785B3D-97C7-4035-B855-191AC73814BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4785B3D-97C7-4035-B855-191AC73814BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4785B3D-97C7-4035-B855-191AC73814BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4071C37D-7237-4000-8F96-86201129EB81}
+	EndGlobalSection
+EndGlobal
